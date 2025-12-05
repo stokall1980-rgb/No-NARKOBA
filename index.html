@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bahaya Narkoba - Edukasi Interaktif</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Toggle Dark Mode -->
+<div class="toggle-container">
+    <label class="switch">
+        <input type="checkbox" id="darkModeToggle">
+        <span class="slider round"></span>
+    </label>
+    <span class="toggle-label">Dark Mode</span>
+</div>
+
+<header class="fade-in">
+    <h1>Bahaya Narkoba</h1>
+    <p>Ketahui risiko dan cegah sebelum terlambat.</p>
+</header>
+
+<nav class="fade-in">
+    <ul>
+        <li><a href="#apa-itu">Apa Itu?</a></li>
+        <li><a href="#bahaya">Bahaya</a></li>
+        <li><a href="#pencegahan">Pencegahan</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+    </ul>
+</nav>
+
+<section id="apa-itu" class="card fade-in">
+    <h2>Apa Itu Narkoba?</h2>
+    <p>Narkoba adalah zat berbahaya yang dapat merusak tubuh, pikiran, dan masa depan seseorang.</p>
+</section>
+
+<section id="bahaya" class="card fade-in">
+    <h2>Bahaya Narkoba</h2>
+    <ul>
+        <li>Kerusakan otak permanen</li>
+        <li>Kecanduan berat</li>
+        <li>Gangguan mental</li>
+        <li>Risiko kriminalitas</li>
+        <li>Dapat menyebabkan kematian</li>
+    </ul>
+</section>
+
+<section id="pencegahan" class="card fade-in">
+    <h2>Cara Pencegahan</h2>
+    <p>Pendidikan, lingkungan positif, serta dukungan keluarga adalah langkah efektif untuk mencegah penggunaan narkoba.</p>
+</section>
+
+<section id="quiz" class="card fade-in">
+    <h2>Quiz Edukasi</h2>
+    <p>Apakah narkoba berbahaya bagi kesehatan?</p>
+    <button class="btn" onclick="checkAnswer(true)">Iya</button>
+    <button class="btn" onclick="checkAnswer(false)">Tidak</button>
+    <p id="quiz-result"></p>
+</section>
+
+<footer class="fade-in">
+    <p>Website Edukasi Anti Narkoba © 2025</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
