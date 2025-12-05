@@ -1,0 +1,152 @@
+/* GENERAL STYLE */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #e7e7e7;
+    color: #222;
+    transition: 0.4s ease-in-out;
+}
+
+/* DARK MODE */
+body.dark {
+    background: #121212;
+    color: #eee;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #d62828, #ba1c1c);
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+/* CARD SECTIONS */
+.card {
+    margin: 25px auto;
+    padding: 25px;
+    max-width: 850px;
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+body.dark .card {
+    background: rgba(20,20,20,0.5);
+    box-shadow: 0 4px 8px rgba(255,255,255,0.05);
+}
+
+/* BUTTON */
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background: #2a9d8f;
+    color: white;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #21867a;
+    transform: scale(1.05);
+}
+
+/* TOGGLE DARK MODE */
+.toggle-container {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-label {
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+/* SWITCH STYLE */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+}
+
+.switch input { display: none; }
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 22px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px; width: 18px;
+    left: 2px; bottom: 2px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2a9d8f;
+}
+
+input:checked + .slider:before {
+    transform: translateX(23px);
+}
+
+/* ANIMATION */
+.fade-in {
+    animation: fade 1.2s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fade {
+    to { opacity: 1; }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
